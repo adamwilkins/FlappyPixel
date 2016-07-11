@@ -5,8 +5,13 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.utils.StringBuilder;
 
 public class FlappyPixel extends ApplicationAdapter {
+	public static final int WIDTH = 480;				//global value for the width
+	public static final int HEIGHT = 800;				//global value for the height
+	public static final String TITLE = "FlappyPixel";	//global title
+
 	SpriteBatch batch;
 	Texture img;
 	

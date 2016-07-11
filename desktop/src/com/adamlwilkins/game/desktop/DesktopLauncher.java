@@ -7,6 +7,11 @@ import com.adamlwilkins.game.FlappyPixel;
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
+
+		config.width = FlappyPixel.WIDTH;		//sets the width/height/title of the game to the core
+		config.height = FlappyPixel.HEIGHT;
+		config.title = FlappyPixel.TITLE;
+
 		new LwjglApplication(new FlappyPixel(), config);
 	}
 }
